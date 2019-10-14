@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Available images"
+        android:visibility="gone"
+        android:id="@+id/na"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scroll"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="search_value"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:id="@+id/title"/>
+            <com.example.photosearchapp.CustomGridView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                >
+
+            </com.example.photosearchapp.CustomGridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Photo Search</string>
+    <string name="title_activity_photo_preview">PhotoPreview</string>
+
+</resources>
